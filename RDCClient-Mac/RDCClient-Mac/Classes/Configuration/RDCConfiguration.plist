@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ShouldAutoAgree</key>
+	<false/>
+	<key>ShouldVerifyPassword</key>
+	<true/>
+	<key>ShouldDeleteWallpaper</key>
+	<false/>
+	<key>ShouldCaptureMouse</key>
+	<true/>
+	<key>ServerIPAddr</key>
+	<string>127.0.0.1</string>
+	<key>ServerPort</key>
+	<string>9999</string>
+	<key>LocalPort</key>
+	<string>15555</string>
+</dict>
+</plist>

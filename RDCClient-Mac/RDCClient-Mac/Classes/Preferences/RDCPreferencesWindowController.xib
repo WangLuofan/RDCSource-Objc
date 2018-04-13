@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="RDCPreferencesWindowController">
+            <connections>
+                <outlet property="autoAgreeBtn" destination="5bW-wH-07k" id="nN0-kH-lWK"/>
+                <outlet property="captureMouseBtn" destination="aao-6M-OwC" id="6G9-a4-3DR"/>
+                <outlet property="deleteWallpaperBtn" destination="id9-08-gMd" id="3bT-GS-iub"/>
+                <outlet property="localPortTextField" destination="LJA-Bs-Czm" id="Zie-LA-D1K"/>
+                <outlet property="serverAddrTextField" destination="CgS-fb-McJ" id="P9E-rz-5kB"/>
+                <outlet property="serverPortTextField" destination="ylb-r0-Hh0" id="XZc-2G-RV9"/>
+                <outlet property="verifyPasswordBtn" destination="cXW-vj-b5Y" id="yko-6H-ATy"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="首选项" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="500" height="223"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <view key="contentView" wantsLayer="YES" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="500" height="223"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ilM-fB-IbN">
+                        <rect key="frame" x="354" y="18" width="67" height="32"/>
+                        <buttonCell key="cell" type="push" title="取消" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="sCw-8J-N1s">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="cancel:" target="-2" id="a66-Eh-tT0"/>
+                        </connections>
+                    </button>
+                    <box autoresizesSubviews="NO" borderType="line" title="服务器信息" translatesAutoresizingMaskIntoConstraints="NO" id="KjE-X6-ugZ">
+                        <rect key="frame" x="12" y="104" width="289" height="104"/>
+                        <view key="contentView" id="NfD-mi-Ltw">
+                            <rect key="frame" x="1" y="1" width="287" height="88"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ylb-r0-Hh0">
+                                    <rect key="frame" x="87" y="22" width="185" height="22"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="服务器端口" drawsBackground="YES" id="oju-eY-y3i">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Mb4-0H-XEg">
+                                    <rect key="frame" x="13" y="56" width="61" height="17"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="远程地址:" id="S4g-hv-ZeC">
+                                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CgS-fb-McJ">
+                                    <rect key="frame" x="87" y="54" width="185" height="22"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="服务器地址" drawsBackground="YES" id="nuw-lj-4dp">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zfX-N6-BzC">
+                                    <rect key="frame" x="13" y="24" width="61" height="17"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="远程端口:" id="ruP-bM-O7i">
+                                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="ylb-r0-Hh0" secondAttribute="trailing" constant="15" id="0LK-h4-JeH"/>
+                                <constraint firstItem="ylb-r0-Hh0" firstAttribute="leading" secondItem="zfX-N6-BzC" secondAttribute="trailing" constant="15" id="8Tv-qA-Hhd"/>
+                                <constraint firstItem="Mb4-0H-XEg" firstAttribute="top" secondItem="NfD-mi-Ltw" secondAttribute="top" constant="15" id="EMB-8f-jrK"/>
+                                <constraint firstItem="CgS-fb-McJ" firstAttribute="centerY" secondItem="Mb4-0H-XEg" secondAttribute="centerY" id="Oo5-Sx-Min"/>
+                                <constraint firstItem="CgS-fb-McJ" firstAttribute="leading" secondItem="Mb4-0H-XEg" secondAttribute="trailing" constant="15" id="dJv-84-NFQ"/>
+                                <constraint firstItem="Mb4-0H-XEg" firstAttribute="leading" secondItem="NfD-mi-Ltw" secondAttribute="leading" constant="15" id="erT-d3-8fE"/>
+                                <constraint firstItem="ylb-r0-Hh0" firstAttribute="centerY" secondItem="zfX-N6-BzC" secondAttribute="centerY" id="gmV-uE-Ogt"/>
+                                <constraint firstItem="zfX-N6-BzC" firstAttribute="leading" secondItem="NfD-mi-Ltw" secondAttribute="leading" constant="15" id="lpq-Wk-4PA"/>
+                                <constraint firstItem="zfX-N6-BzC" firstAttribute="top" secondItem="Mb4-0H-XEg" secondAttribute="bottom" constant="15" id="rd1-2n-qVg"/>
+                                <constraint firstAttribute="trailing" secondItem="CgS-fb-McJ" secondAttribute="trailing" constant="15" id="xwe-o7-I7R"/>
+                            </constraints>
+                        </view>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="FqH-4m-s6O"/>
+                        </constraints>
+                        <font key="titleFont" size="11" name=".PingFangSC-Regular"/>
+                    </box>
+                    <box autoresizesSubviews="NO" borderType="line" title="本地端口" translatesAutoresizingMaskIntoConstraints="NO" id="qdU-AT-QVh">
+                        <rect key="frame" x="12" y="31" width="289" height="64"/>
+                        <view key="contentView" id="yGQ-W5-Hoi">
+                            <rect key="frame" x="1" y="1" width="287" height="48"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LJA-Bs-Czm">
+                                    <rect key="frame" x="87" y="14" width="185" height="22"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="本地端口号" drawsBackground="YES" id="X0J-8g-gcf">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sQb-qX-8Q8">
+                                    <rect key="frame" x="13" y="16" width="61" height="17"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="本地端口:" id="4xX-HG-1bx">
+                                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="LJA-Bs-Czm" firstAttribute="centerY" secondItem="sQb-qX-8Q8" secondAttribute="centerY" id="Nie-Nk-XiD"/>
+                                <constraint firstAttribute="trailing" secondItem="LJA-Bs-Czm" secondAttribute="trailing" constant="15" id="Or2-kv-5FR"/>
+                                <constraint firstItem="LJA-Bs-Czm" firstAttribute="leading" secondItem="sQb-qX-8Q8" secondAttribute="trailing" constant="15" id="lnH-R2-tdK"/>
+                                <constraint firstItem="sQb-qX-8Q8" firstAttribute="top" secondItem="yGQ-W5-Hoi" secondAttribute="top" constant="15" id="mtG-kf-rit"/>
+                                <constraint firstItem="sQb-qX-8Q8" firstAttribute="leading" secondItem="yGQ-W5-Hoi" secondAttribute="leading" constant="15" id="sCo-CJ-gcJ"/>
+                            </constraints>
+                        </view>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="RSj-rs-ml3"/>
+                        </constraints>
+                        <font key="titleFont" size="11" name=".PingFangSC-Regular"/>
+                    </box>
+                    <box autoresizesSubviews="NO" borderType="line" title="其他配置" translatesAutoresizingMaskIntoConstraints="NO" id="TbA-Y8-Vd8">
+                        <rect key="frame" x="312" y="54" width="176" height="154"/>
+                        <view key="contentView" id="YcL-fX-QeH">
+                            <rect key="frame" x="1" y="1" width="174" height="138"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="id9-08-gMd">
+                                    <rect key="frame" x="13" y="49" width="102" height="18"/>
+                                    <buttonCell key="cell" type="check" title="是否删除壁纸" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="vXD-nU-3Xh">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    </buttonCell>
+                                </button>
+                                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5bW-wH-07k">
+                                    <rect key="frame" x="13" y="107" width="102" height="18"/>
+                                    <buttonCell key="cell" type="check" title="是否自动同意" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="RnT-iw-2SI">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    </buttonCell>
+                                </button>
+                                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cXW-vj-b5Y">
+                                    <rect key="frame" x="13" y="78" width="129" height="18"/>
+                                    <buttonCell key="cell" type="check" title="是否需要密码验证" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="BAc-q9-uQA">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    </buttonCell>
+                                </button>
+                                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aao-6M-OwC">
+                                    <rect key="frame" x="13" y="20" width="155" height="18"/>
+                                    <buttonCell key="cell" type="check" title="是否显示远程鼠标指针" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="NlU-44-3qH">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    </buttonCell>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="5bW-wH-07k" firstAttribute="top" secondItem="YcL-fX-QeH" secondAttribute="top" constant="15" id="1v9-8o-oMN"/>
+                                <constraint firstItem="aao-6M-OwC" firstAttribute="leading" secondItem="YcL-fX-QeH" secondAttribute="leading" constant="15" id="52u-iv-D3D"/>
+                                <constraint firstItem="aao-6M-OwC" firstAttribute="top" secondItem="id9-08-gMd" secondAttribute="bottom" constant="15" id="9Re-Wh-UqF"/>
+                                <constraint firstItem="id9-08-gMd" firstAttribute="top" secondItem="cXW-vj-b5Y" secondAttribute="bottom" constant="15" id="Yis-Ke-O8Z"/>
+                                <constraint firstItem="cXW-vj-b5Y" firstAttribute="leading" secondItem="YcL-fX-QeH" secondAttribute="leading" constant="15" id="mlB-eA-g7M"/>
+                                <constraint firstItem="cXW-vj-b5Y" firstAttribute="top" secondItem="5bW-wH-07k" secondAttribute="bottom" constant="15" id="okT-SD-Szx"/>
+                                <constraint firstItem="id9-08-gMd" firstAttribute="leading" secondItem="YcL-fX-QeH" secondAttribute="leading" constant="15" id="qwT-ho-xKy"/>
+                                <constraint firstItem="5bW-wH-07k" firstAttribute="leading" secondItem="YcL-fX-QeH" secondAttribute="leading" constant="15" id="wpa-Uf-sM5"/>
+                            </constraints>
+                        </view>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="170" id="1QT-Sf-tb8"/>
+                            <constraint firstAttribute="height" constant="150" id="cln-SP-8yZ"/>
+                        </constraints>
+                        <font key="titleFont" size="11" name=".PingFangSC-Regular"/>
+                    </box>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fCZ-QY-MYO">
+                        <rect key="frame" x="424" y="18" width="67" height="32"/>
+                        <buttonCell key="cell" type="push" title="保存" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="y2T-Su-0lJ">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="save:" target="-2" id="nLR-4L-blJ"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fCZ-QY-MYO" firstAttribute="leading" secondItem="ilM-fB-IbN" secondAttribute="trailing" constant="15" id="DEV-QO-CQK"/>
+                    <constraint firstAttribute="trailing" secondItem="fCZ-QY-MYO" secondAttribute="trailing" constant="15" id="MHe-wE-yrZ"/>
+                    <constraint firstItem="qdU-AT-QVh" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="15" id="YFP-PI-k61"/>
+                    <constraint firstItem="qdU-AT-QVh" firstAttribute="top" secondItem="NfD-mi-Ltw" secondAttribute="bottom" constant="10" id="azN-0M-fpB"/>
+                    <constraint firstItem="KjE-X6-ugZ" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="15" id="cL8-CJ-va6"/>
+                    <constraint firstItem="ilM-fB-IbN" firstAttribute="top" secondItem="yGQ-W5-Hoi" secondAttribute="bottom" constant="-14" id="dHK-dF-ip8"/>
+                    <constraint firstAttribute="trailing" secondItem="TbA-Y8-Vd8" secondAttribute="trailing" constant="15" id="do5-b0-yfQ"/>
+                    <constraint firstItem="YcL-fX-QeH" firstAttribute="leading" secondItem="KjE-X6-ugZ" secondAttribute="trailing" constant="15" id="lI8-VP-6S9"/>
+                    <constraint firstItem="fCZ-QY-MYO" firstAttribute="top" secondItem="ilM-fB-IbN" secondAttribute="top" id="pUi-5m-t0a"/>
+                    <constraint firstItem="KjE-X6-ugZ" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="15" id="rka-gI-bP0"/>
+                    <constraint firstItem="TbA-Y8-Vd8" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="15" id="vQy-yE-NaW"/>
+                    <constraint firstItem="YcL-fX-QeH" firstAttribute="leading" secondItem="qdU-AT-QVh" secondAttribute="trailing" constant="15" id="wWn-zm-A49"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="114" y="143"/>
+        </window>
+    </objects>
+</document>

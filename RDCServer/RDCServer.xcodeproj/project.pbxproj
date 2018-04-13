@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B3921BF32043A11A003F1FC5 /* libevent_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3921BEF2043A11A003F1FC5 /* libevent_core.a */; };
+		B3921BF42043A11A003F1FC5 /* libevent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3921BF02043A11A003F1FC5 /* libevent.a */; };
+		B3921BF52043A11A003F1FC5 /* libevent_extra.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3921BF12043A11A003F1FC5 /* libevent_extra.a */; };
+		B3921BF62043A11A003F1FC5 /* libevent_pthreads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3921BF22043A11A003F1FC5 /* libevent_pthreads.a */; };
+		B3921BFD2043A2BA003F1FC5 /* RDCServer.m in Sources */ = {isa = PBXBuildFile; fileRef = B3921BFC2043A2BA003F1FC5 /* RDCServer.m */; };
+		B3921C032043B3FE003F1FC5 /* RDCMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B3921C022043B3FE003F1FC5 /* RDCMessage.m */; };
+		B3921C082043BD06003F1FC5 /* RDCClientInfoList.m in Sources */ = {isa = PBXBuildFile; fileRef = B3921C072043BD06003F1FC5 /* RDCClientInfoList.m */; };
+		B3921C0E2043EE58003F1FC5 /* RDCLog.m in Sources */ = {isa = PBXBuildFile; fileRef = B3921C0D2043EE58003F1FC5 /* RDCLog.m */; };
+		B3ACD122205B68F4002E2045 /* RDCHostInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B3ACD121205B68F3002E2045 /* RDCHostInfo.m */; };
+		B3C5FB112040068E001572B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C5FB102040068E001572B3 /* AppDelegate.m */; };
+		B3C5FB132040068E001572B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3C5FB122040068E001572B3 /* Assets.xcassets */; };
+		B3C5FB162040068E001572B3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3C5FB142040068E001572B3 /* MainMenu.xib */; };
+		B3C5FB192040068E001572B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C5FB182040068E001572B3 /* main.m */; };
+		B3C5FB2A2040081C001572B3 /* RDCMainWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C5FB292040081C001572B3 /* RDCMainWindow.m */; };
+		B3C5FB2E2040082C001572B3 /* RDCMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C5FB2C2040082C001572B3 /* RDCMainWindowController.m */; };
+		B3C5FB2F2040082C001572B3 /* RDCMainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3C5FB2D2040082C001572B3 /* RDCMainWindowController.xib */; };
+		B3C5FB33204008B7001572B3 /* RDCWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C5FB32204008B7001572B3 /* RDCWindow.m */; };
+		B3C5FB36204008C4001572B3 /* RDCWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C5FB35204008C4001572B3 /* RDCWindowController.m */; };
+		B3C5FB3A20400DC7001572B3 /* RDCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C5FB3920400DC7001572B3 /* RDCUtils.m */; };
+		B3C5FB3E204011B5001572B3 /* RDCPreferenceWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C5FB3D204011B5001572B3 /* RDCPreferenceWindow.m */; };
+		B3C5FB42204011CF001572B3 /* RDCPreferenceWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C5FB40204011CF001572B3 /* RDCPreferenceWindowController.m */; };
+		B3C5FB43204011CF001572B3 /* RDCPreferenceWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3C5FB41204011CF001572B3 /* RDCPreferenceWindowController.xib */; };
+		B3C5FB47204013E5001572B3 /* RDCConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C5FB46204013E5001572B3 /* RDCConfiguration.m */; };
+		B3C5FB49204013F3001572B3 /* RDCConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3C5FB48204013F3001572B3 /* RDCConfiguration.plist */; };
+		B3C5FB4D20401CCF001572B3 /* RDCClientInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C5FB4C20401CCF001572B3 /* RDCClientInfo.m */; };
+		B3C5FB5120401CF2001572B3 /* RDCTcpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C5FB5020401CF2001572B3 /* RDCTcpSocket.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B3921BEF2043A11A003F1FC5 /* libevent_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent_core.a; path = ../../../../../usr/local/lib/libevent_core.a; sourceTree = "<group>"; };
+		B3921BF02043A11A003F1FC5 /* libevent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent.a; path = ../../../../../usr/local/lib/libevent.a; sourceTree = "<group>"; };
+		B3921BF12043A11A003F1FC5 /* libevent_extra.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent_extra.a; path = ../../../../../usr/local/lib/libevent_extra.a; sourceTree = "<group>"; };
+		B3921BF22043A11A003F1FC5 /* libevent_pthreads.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent_pthreads.a; path = ../../../../../usr/local/lib/libevent_pthreads.a; sourceTree = "<group>"; };
+		B3921BFB2043A2BA003F1FC5 /* RDCServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDCServer.h; sourceTree = "<group>"; };
+		B3921BFC2043A2BA003F1FC5 /* RDCServer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDCServer.m; sourceTree = "<group>"; };
+		B3921BFE2043A909003F1FC5 /* RDCTcpSocketInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDCTcpSocketInterface.h; sourceTree = "<group>"; };
+		B3921BFF2043AA10003F1FC5 /* RDCServer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RDCServer-Prefix.pch"; sourceTree = "<group>"; };
+		B3921C012043B3FE003F1FC5 /* RDCMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDCMessage.h; sourceTree = "<group>"; };
+		B3921C022043B3FE003F1FC5 /* RDCMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDCMessage.m; sourceTree = "<group>"; };
+		B3921C052043B592003F1FC5 /* RDCServiceCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDCServiceCommand.h; sourceTree = "<group>"; };
+		B3921C062043BD06003F1FC5 /* RDCClientInfoList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDCClientInfoList.h; sourceTree = "<group>"; };
+		B3921C072043BD06003F1FC5 /* RDCClientInfoList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDCClientInfoList.m; sourceTree = "<group>"; };
+		B3921C092043E5D9003F1FC5 /* RDCGenericMarcos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDCGenericMarcos.h; sourceTree = "<group>"; };
+		B3921C0C2043EE58003F1FC5 /* RDCLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDCLog.h; sourceTree = "<group>"; };
+		B3921C0D2043EE58003F1FC5 /* RDCLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDCLog.m; sourceTree = "<group>"; };
+		B3ACD120205B68F3002E2045 /* RDCHostInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDCHostInfo.h; sourceTree = "<group>"; };
+		B3ACD121205B68F3002E2045 /* RDCHostInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDCHostInfo.m; sourceTree = "<group>"; };
+		B3C5FB0C2040068E001572B3 /* RDCServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RDCServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3C5FB0F2040068E001572B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B3C5FB102040068E001572B3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B3C5FB122040068E001572B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3C5FB152040068E001572B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B3C5FB182040068E001572B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B3C5FB282040081C001572B3 /* RDCMainWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDCMainWindow.h; sourceTree = "<group>"; };
+		B3C5FB292040081C001572B3 /* RDCMainWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDCMainWindow.m; sourceTree = "<group>"; };
+		B3C5FB2B2040082C001572B3 /* RDCMainWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDCMainWindowController.h; sourceTree = "<group>"; };
+		B3C5FB2C2040082C001572B3 /* RDCMainWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDCMainWindowController.m; sourceTree = "<group>"; };
+		B3C5FB2D2040082C001572B3 /* RDCMainWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RDCMainWindowController.xib; sourceTree = "<group>"; };
+		B3C5FB31204008B7001572B3 /* RDCWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDCWindow.h; sourceTree = "<group>"; };
+		B3C5FB32204008B7001572B3 /* RDCWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDCWindow.m; sourceTree = "<group>"; };
+		B3C5FB34204008C4001572B3 /* RDCWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDCWindowController.h; sourceTree = "<group>"; };
+		B3C5FB35204008C4001572B3 /* RDCWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDCWindowController.m; sourceTree = "<group>"; };
+		B3C5FB3820400DC7001572B3 /* RDCUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDCUtils.h; sourceTree = "<group>"; };
+		B3C5FB3920400DC7001572B3 /* RDCUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDCUtils.m; sourceTree = "<group>"; };
+		B3C5FB3C204011B5001572B3 /* RDCPreferenceWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDCPreferenceWindow.h; sourceTree = "<group>"; };
+		B3C5FB3D204011B5001572B3 /* RDCPreferenceWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDCPreferenceWindow.m; sourceTree = "<group>"; };
+		B3C5FB3F204011CF001572B3 /* RDCPreferenceWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDCPreferenceWindowController.h; sourceTree = "<group>"; };
+		B3C5FB40204011CF001572B3 /* RDCPreferenceWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDCPreferenceWindowController.m; sourceTree = "<group>"; };
+		B3C5FB41204011CF001572B3 /* RDCPreferenceWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RDCPreferenceWindowController.xib; sourceTree = "<group>"; };
+		B3C5FB45204013E5001572B3 /* RDCConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDCConfiguration.h; sourceTree = "<group>"; };
+		B3C5FB46204013E5001572B3 /* RDCConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDCConfiguration.m; sourceTree = "<group>"; };
+		B3C5FB48204013F3001572B3 /* RDCConfiguration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RDCConfiguration.plist; sourceTree = "<group>"; };
+		B3C5FB4B20401CCF001572B3 /* RDCClientInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDCClientInfo.h; sourceTree = "<group>"; };
+		B3C5FB4C20401CCF001572B3 /* RDCClientInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDCClientInfo.m; sourceTree = "<group>"; };
+		B3C5FB4F20401CF2001572B3 /* RDCTcpSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDCTcpSocket.h; sourceTree = "<group>"; };
+		B3C5FB5020401CF2001572B3 /* RDCTcpSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDCTcpSocket.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3C5FB092040068E001572B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3921BF32043A11A003F1FC5 /* libevent_core.a in Frameworks */,
+				B3921BF42043A11A003F1FC5 /* libevent.a in Frameworks */,
+				B3921BF52043A11A003F1FC5 /* libevent_extra.a in Frameworks */,
+				B3921BF62043A11A003F1FC5 /* libevent_pthreads.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B3921BEE2043A11A003F1FC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3921BEF2043A11A003F1FC5 /* libevent_core.a */,
+				B3921BF12043A11A003F1FC5 /* libevent_extra.a */,
+				B3921BF22043A11A003F1FC5 /* libevent_pthreads.a */,
+				B3921BF02043A11A003F1FC5 /* libevent.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3921BF72043A266003F1FC5 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				B3921BFB2043A2BA003F1FC5 /* RDCServer.h */,
+				B3921BFC2043A2BA003F1FC5 /* RDCServer.m */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		B3921C002043B3F2003F1FC5 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				B3921C012043B3FE003F1FC5 /* RDCMessage.h */,
+				B3921C022043B3FE003F1FC5 /* RDCMessage.m */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		B3921C042043B586003F1FC5 /* ServicesCommand */ = {
+			isa = PBXGroup;
+			children = (
+				B3921C052043B592003F1FC5 /* RDCServiceCommand.h */,
+			);
+			path = ServicesCommand;
+			sourceTree = "<group>";
+		};
+		B3921C0B2043EE45003F1FC5 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				B3921C0C2043EE58003F1FC5 /* RDCLog.h */,
+				B3921C0D2043EE58003F1FC5 /* RDCLog.m */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		B3ACD11F205B68F3002E2045 /* HostInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B3ACD120205B68F3002E2045 /* RDCHostInfo.h */,
+				B3ACD121205B68F3002E2045 /* RDCHostInfo.m */,
+			);
+			path = HostInfo;
+			sourceTree = "<group>";
+		};
+		B3C5FB032040068E001572B3 = {
+			isa = PBXGroup;
+			children = (
+				B3C5FB0E2040068E001572B3 /* RDCServer */,
+				B3C5FB0D2040068E001572B3 /* Products */,
+				B3921BEE2043A11A003F1FC5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B3C5FB0D2040068E001572B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3C5FB0C2040068E001572B3 /* RDCServer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3C5FB0E2040068E001572B3 /* RDCServer */ = {
+			isa = PBXGroup;
+			children = (
+				B3C5FB23204007B9001572B3 /* Classes */,
+				B3C5FB22204007AB001572B3 /* Supporting Files */,
+				B3C5FB202040078F001572B3 /* AppDelegate */,
+				B3C5FB212040079B001572B3 /* Resources */,
+			);
+			path = RDCServer;
+			sourceTree = "<group>";
+		};
+		B3C5FB202040078F001572B3 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B3C5FB0F2040068E001572B3 /* AppDelegate.h */,
+				B3C5FB102040068E001572B3 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		B3C5FB212040079B001572B3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B3C5FB122040068E001572B3 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B3C5FB22204007AB001572B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3C5FB142040068E001572B3 /* MainMenu.xib */,
+				B3C5FB182040068E001572B3 /* main.m */,
+				B3921BFF2043AA10003F1FC5 /* RDCServer-Prefix.pch */,
+				B3921C092043E5D9003F1FC5 /* RDCGenericMarcos.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3C5FB23204007B9001572B3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B3921C0B2043EE45003F1FC5 /* Log */,
+				B3921C042043B586003F1FC5 /* ServicesCommand */,
+				B3921C002043B3F2003F1FC5 /* Message */,
+				B3921BF72043A266003F1FC5 /* Server */,
+				B3C5FB4E20401CE6001572B3 /* Socket */,
+				B3C5FB4A20401CBF001572B3 /* ClientInfo */,
+				B3ACD11F205B68F3002E2045 /* HostInfo */,
+				B3C5FB44204013D5001572B3 /* Configuration */,
+				B3C5FB3B20401197001572B3 /* Preference */,
+				B3C5FB3720400DBC001572B3 /* Utils */,
+				B3C5FB30204008A0001572B3 /* Base */,
+				B3C5FB24204007C6001572B3 /* MainWindow */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B3C5FB24204007C6001572B3 /* MainWindow */ = {
+			isa = PBXGroup;
+			children = (
+				B3C5FB282040081C001572B3 /* RDCMainWindow.h */,
+				B3C5FB292040081C001572B3 /* RDCMainWindow.m */,
+				B3C5FB2B2040082C001572B3 /* RDCMainWindowController.h */,
+				B3C5FB2C2040082C001572B3 /* RDCMainWindowController.m */,
+				B3C5FB2D2040082C001572B3 /* RDCMainWindowController.xib */,
+			);
+			path = MainWindow;
+			sourceTree = "<group>";
+		};
+		B3C5FB30204008A0001572B3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B3C5FB31204008B7001572B3 /* RDCWindow.h */,
+				B3C5FB32204008B7001572B3 /* RDCWindow.m */,
+				B3C5FB34204008C4001572B3 /* RDCWindowController.h */,
+				B3C5FB35204008C4001572B3 /* RDCWindowController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B3C5FB3720400DBC001572B3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B3C5FB3820400DC7001572B3 /* RDCUtils.h */,
+				B3C5FB3920400DC7001572B3 /* RDCUtils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B3C5FB3B20401197001572B3 /* Preference */ = {
+			isa = PBXGroup;
+			children = (
+				B3C5FB3C204011B5001572B3 /* RDCPreferenceWindow.h */,
+				B3C5FB3D204011B5001572B3 /* RDCPreferenceWindow.m */,
+				B3C5FB3F204011CF001572B3 /* RDCPreferenceWindowController.h */,
+				B3C5FB40204011CF001572B3 /* RDCPreferenceWindowController.m */,
+				B3C5FB41204011CF001572B3 /* RDCPreferenceWindowController.xib */,
+			);
+			path = Preference;
+			sourceTree = "<group>";
+		};
+		B3C5FB44204013D5001572B3 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				B3C5FB45204013E5001572B3 /* RDCConfiguration.h */,
+				B3C5FB46204013E5001572B3 /* RDCConfiguration.m */,
+				B3C5FB48204013F3001572B3 /* RDCConfiguration.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		B3C5FB4A20401CBF001572B3 /* ClientInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B3C5FB4B20401CCF001572B3 /* RDCClientInfo.h */,
+				B3C5FB4C20401CCF001572B3 /* RDCClientInfo.m */,
+				B3921C062043BD06003F1FC5 /* RDCClientInfoList.h */,
+				B3921C072043BD06003F1FC5 /* RDCClientInfoList.m */,
+			);
+			path = ClientInfo;
+			sourceTree = "<group>";
+		};
+		B3C5FB4E20401CE6001572B3 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				B3C5FB4F20401CF2001572B3 /* RDCTcpSocket.h */,
+				B3C5FB5020401CF2001572B3 /* RDCTcpSocket.m */,
+				B3921BFE2043A909003F1FC5 /* RDCTcpSocketInterface.h */,
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3C5FB0B2040068E001572B3 /* RDCServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3C5FB1D2040068E001572B3 /* Build configuration list for PBXNativeTarget "RDCServer" */;
+			buildPhases = (
+				B3C5FB082040068E001572B3 /* Sources */,
+				B3C5FB092040068E001572B3 /* Frameworks */,
+				B3C5FB0A2040068E001572B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RDCServer;
+			productName = RDCServer;
+			productReference = B3C5FB0C2040068E001572B3 /* RDCServer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3C5FB042040068E001572B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RDC;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "王落凡";
+				TargetAttributes = {
+					B3C5FB0B2040068E001572B3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B3C5FB072040068E001572B3 /* Build configuration list for PBXProject "RDCServer" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3C5FB032040068E001572B3;
+			productRefGroup = B3C5FB0D2040068E001572B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3C5FB0B2040068E001572B3 /* RDCServer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3C5FB0A2040068E001572B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3C5FB132040068E001572B3 /* Assets.xcassets in Resources */,
+				B3C5FB49204013F3001572B3 /* RDCConfiguration.plist in Resources */,
+				B3C5FB162040068E001572B3 /* MainMenu.xib in Resources */,
+				B3C5FB43204011CF001572B3 /* RDCPreferenceWindowController.xib in Resources */,
+				B3C5FB2F2040082C001572B3 /* RDCMainWindowController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3C5FB082040068E001572B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3C5FB3E204011B5001572B3 /* RDCPreferenceWindow.m in Sources */,
+				B3C5FB192040068E001572B3 /* main.m in Sources */,
+				B3C5FB5120401CF2001572B3 /* RDCTcpSocket.m in Sources */,
+				B3C5FB2A2040081C001572B3 /* RDCMainWindow.m in Sources */,
+				B3C5FB33204008B7001572B3 /* RDCWindow.m in Sources */,
+				B3921C032043B3FE003F1FC5 /* RDCMessage.m in Sources */,
+				B3C5FB42204011CF001572B3 /* RDCPreferenceWindowController.m in Sources */,
+				B3C5FB36204008C4001572B3 /* RDCWindowController.m in Sources */,
+				B3921C0E2043EE58003F1FC5 /* RDCLog.m in Sources */,
+				B3C5FB47204013E5001572B3 /* RDCConfiguration.m in Sources */,
+				B3C5FB4D20401CCF001572B3 /* RDCClientInfo.m in Sources */,
+				B3ACD122205B68F4002E2045 /* RDCHostInfo.m in Sources */,
+				B3C5FB3A20400DC7001572B3 /* RDCUtils.m in Sources */,
+				B3C5FB2E2040082C001572B3 /* RDCMainWindowController.m in Sources */,
+				B3921BFD2043A2BA003F1FC5 /* RDCServer.m in Sources */,
+				B3921C082043BD06003F1FC5 /* RDCClientInfoList.m in Sources */,
+				B3C5FB112040068E001572B3 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B3C5FB142040068E001572B3 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3C5FB152040068E001572B3 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3C5FB1B2040068E001572B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B3C5FB1C2040068E001572B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B3C5FB1E2040068E001572B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 29D7F8VWD7;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/$(PROJECT_NAME)-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				INFOPLIST_FILE = RDCServer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangluofan.RDC.RDCServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B3C5FB1F2040068E001572B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 29D7F8VWD7;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/$(PROJECT_NAME)-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				INFOPLIST_FILE = RDCServer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangluofan.RDC.RDCServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3C5FB072040068E001572B3 /* Build configuration list for PBXProject "RDCServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3C5FB1B2040068E001572B3 /* Debug */,
+				B3C5FB1C2040068E001572B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3C5FB1D2040068E001572B3 /* Build configuration list for PBXNativeTarget "RDCServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3C5FB1E2040068E001572B3 /* Debug */,
+				B3C5FB1F2040068E001572B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3C5FB042040068E001572B3 /* Project object */;
+}

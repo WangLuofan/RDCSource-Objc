@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RDCScreenTopMenuView">
+            <rect key="frame" x="0.0" y="0.0" width="529" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Zx-pZ-HPP" customClass="RDCMultilineButton">
+                    <rect key="frame" x="0.0" y="0.0" width="88" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="关闭 键盘"/>
+                    <connections>
+                        <action selector="menuItemSelected:" destination="iN0-l3-epB" eventType="touchUpInside" id="kO4-Ea-hkU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Py0-3x-Lvu" customClass="RDCMultilineButton">
+                    <rect key="frame" x="88" y="0.0" width="88.5" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-15"/>
+                    <state key="normal" title="⌃"/>
+                    <connections>
+                        <action selector="menuItemSelected:" destination="iN0-l3-epB" eventType="touchUpInside" id="1ex-yW-PcY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EV5-SB-Ltk" customClass="RDCMultilineButton">
+                    <rect key="frame" x="176.5" y="0.0" width="88" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="⌥"/>
+                    <connections>
+                        <action selector="menuItemSelected:" destination="iN0-l3-epB" eventType="touchUpInside" id="UT1-Ik-syF"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBn-UX-5ui" customClass="RDCMultilineButton">
+                    <rect key="frame" x="264.5" y="0.0" width="88" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="⌘"/>
+                    <connections>
+                        <action selector="menuItemSelected:" destination="iN0-l3-epB" eventType="touchUpInside" id="uWs-Sn-vcG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1k-hN-ofZ" customClass="RDCMultilineButton">
+                    <rect key="frame" x="441" y="0.0" width="88" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="更多 按键"/>
+                    <connections>
+                        <action selector="menuItemSelected:" destination="iN0-l3-epB" eventType="touchUpInside" id="ulj-N9-aEa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZF-6P-oZL" customClass="RDCMultilineButton">
+                    <rect key="frame" x="352.5" y="0.0" width="88.5" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                    <state key="normal" title="⎋"/>
+                    <connections>
+                        <action selector="menuItemSelected:" destination="iN0-l3-epB" eventType="touchUpInside" id="b2U-H7-KCt"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Py0-3x-Lvu" secondAttribute="bottom" id="2fg-zk-EV3"/>
+                <constraint firstItem="Py0-3x-Lvu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3R2-qH-sJl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="hBn-UX-5ui" secondAttribute="bottom" id="3Vj-Cp-lxw"/>
+                <constraint firstItem="EV5-SB-Ltk" firstAttribute="leading" secondItem="Py0-3x-Lvu" secondAttribute="trailing" id="4FT-6a-ezF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="H1k-hN-ofZ" secondAttribute="trailing" id="Hqc-KH-lPv"/>
+                <constraint firstItem="EV5-SB-Ltk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Hul-d0-p3e"/>
+                <constraint firstItem="Py0-3x-Lvu" firstAttribute="leading" secondItem="8Zx-pZ-HPP" secondAttribute="trailing" id="Myw-ho-vcM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="8Zx-pZ-HPP" secondAttribute="bottom" id="Ref-vc-Rdo"/>
+                <constraint firstItem="hBn-UX-5ui" firstAttribute="width" secondItem="WZF-6P-oZL" secondAttribute="width" id="Rjt-A8-hsJ"/>
+                <constraint firstItem="hBn-UX-5ui" firstAttribute="leading" secondItem="EV5-SB-Ltk" secondAttribute="trailing" id="SxW-xJ-t4c"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="H1k-hN-ofZ" secondAttribute="bottom" id="TWU-GW-yre"/>
+                <constraint firstItem="WZF-6P-oZL" firstAttribute="width" secondItem="H1k-hN-ofZ" secondAttribute="width" id="X03-uo-JOd"/>
+                <constraint firstItem="WZF-6P-oZL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Y63-hQ-fcc"/>
+                <constraint firstItem="EV5-SB-Ltk" firstAttribute="width" secondItem="hBn-UX-5ui" secondAttribute="width" id="YrK-eA-SJF"/>
+                <constraint firstItem="8Zx-pZ-HPP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aDU-St-Wf3"/>
+                <constraint firstItem="H1k-hN-ofZ" firstAttribute="leading" secondItem="WZF-6P-oZL" secondAttribute="trailing" id="aRz-4c-d91"/>
+                <constraint firstItem="8Zx-pZ-HPP" firstAttribute="width" secondItem="Py0-3x-Lvu" secondAttribute="width" id="bCy-Bn-UIC"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="EV5-SB-Ltk" secondAttribute="bottom" id="bVq-F6-2fG"/>
+                <constraint firstItem="WZF-6P-oZL" firstAttribute="leading" secondItem="hBn-UX-5ui" secondAttribute="trailing" id="cq8-kD-Ipk"/>
+                <constraint firstItem="H1k-hN-ofZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="kmR-YO-5Ng"/>
+                <constraint firstItem="8Zx-pZ-HPP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="kqb-FI-d60"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="WZF-6P-oZL" secondAttribute="bottom" id="nQi-xE-88P"/>
+                <constraint firstItem="Py0-3x-Lvu" firstAttribute="width" secondItem="EV5-SB-Ltk" secondAttribute="width" id="t6Q-6H-Cge"/>
+                <constraint firstItem="hBn-UX-5ui" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zeO-sX-4Jx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="altButton" destination="EV5-SB-Ltk" id="t5s-3f-bjE"/>
+                <outlet property="closeButton" destination="8Zx-pZ-HPP" id="NVv-eO-FMW"/>
+                <outlet property="cmdButton" destination="hBn-UX-5ui" id="n2v-mR-fiz"/>
+                <outlet property="ctrlButton" destination="Py0-3x-Lvu" id="Bey-lM-gvO"/>
+                <outlet property="escButton" destination="WZF-6P-oZL" id="qYs-Rh-hE6"/>
+                <outlet property="moreButton" destination="H1k-hN-ofZ" id="khd-nu-IQk"/>
+            </connections>
+            <point key="canvasLocation" x="20.5" y="-220"/>
+        </view>
+    </objects>
+</document>

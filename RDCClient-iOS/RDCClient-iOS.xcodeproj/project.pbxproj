@@ -1,0 +1,722 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B304EFDF205F63970035EE26 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B304EFC6205F63970035EE26 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		B304EFE0205F63970035EE26 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B304EFCF205F63970035EE26 /* ViewController+MASAdditions.m */; };
+		B304EFE1205F63970035EE26 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B304EFD3205F63970035EE26 /* MASCompositeConstraint.m */; };
+		B304EFE2205F63970035EE26 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = B304EFD4205F63970035EE26 /* MASConstraintMaker.m */; };
+		B304EFE3205F63970035EE26 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B304EFD5205F63970035EE26 /* MASLayoutConstraint.m */; };
+		B304EFE4205F63970035EE26 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B304EFD6205F63970035EE26 /* NSArray+MASAdditions.m */; };
+		B304EFE5205F63970035EE26 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B304EFD7205F63970035EE26 /* View+MASAdditions.m */; };
+		B304EFE6205F63970035EE26 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B304EFDA205F63970035EE26 /* MASConstraint.m */; };
+		B304EFE7205F63970035EE26 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B304EFDC205F63970035EE26 /* MASViewConstraint.m */; };
+		B304EFE8205F63970035EE26 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = B304EFDD205F63970035EE26 /* MASViewAttribute.m */; };
+		B304EFE9205F63970035EE26 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B304EFDE205F63970035EE26 /* Info.plist */; };
+		B33516C52060ECC700ABE0A9 /* RDCScreenMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = B33516C42060ECC700ABE0A9 /* RDCScreenMenuView.m */; };
+		B33516C72060ECCE00ABE0A9 /* RDCScreenMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B33516C62060ECCE00ABE0A9 /* RDCScreenMenuView.xib */; };
+		B33516CA2060F28700ABE0A9 /* RDCMultilineButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B33516C92060F28700ABE0A9 /* RDCMultilineButton.m */; };
+		B33516CD2060FD4300ABE0A9 /* RDCScreenTopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = B33516CC2060FD4300ABE0A9 /* RDCScreenTopMenuView.m */; };
+		B33516CF2060FD4F00ABE0A9 /* RDCScreenTopMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B33516CE2060FD4F00ABE0A9 /* RDCScreenTopMenuView.xib */; };
+		B3A99CF520625B2A00E8A568 /* RDCScreenCustomKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A99CF420625B2A00E8A568 /* RDCScreenCustomKeyboard.m */; };
+		B3A99CFA20625DAA00E8A568 /* RDCCustomKeyboardItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A99CF920625DAA00E8A568 /* RDCCustomKeyboardItem.m */; };
+		B3ACD126205B6A1F002E2045 /* RDCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B3ACD125205B6A1F002E2045 /* RDCUtils.m */; };
+		B3ACD12D205BA153002E2045 /* RDCScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3ACD12B205BA153002E2045 /* RDCScreenViewController.m */; };
+		B3ACD131205BA9E5002E2045 /* RDCDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3ACD130205BA9E5002E2045 /* RDCDrawingView.m */; };
+		B3ACD13A205BE246002E2045 /* libz.1.2.8.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B3ACD139205BE246002E2045 /* libz.1.2.8.tbd */; };
+		B3C5FAD220400533001572B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C5FAD120400533001572B3 /* AppDelegate.m */; };
+		B3C5FADA20400533001572B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3C5FAD920400533001572B3 /* Assets.xcassets */; };
+		B3C5FADD20400533001572B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C5FADB20400533001572B3 /* LaunchScreen.storyboard */; };
+		B3C5FAE020400533001572B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C5FADF20400533001572B3 /* main.m */; };
+		B3F78E79205A436F009198E9 /* RDCMainWindowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3F78E77205A436F009198E9 /* RDCMainWindowViewController.xib */; };
+		B3F78E7A205A436F009198E9 /* RDCMainWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F78E78205A436F009198E9 /* RDCMainWindowViewController.m */; };
+		B3F78E7F205A448D009198E9 /* RDCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F78E7E205A448D009198E9 /* RDCBaseViewController.m */; };
+		B3F78E86205A4590009198E9 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F78E84205A4590009198E9 /* Reachability.m */; };
+		B3F78E90205A47F6009198E9 /* RDCBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F78E8F205A47F6009198E9 /* RDCBaseNavigationController.m */; };
+		B3F78E93205A5185009198E9 /* RDCPreferencesView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F78E92205A5185009198E9 /* RDCPreferencesView.m */; };
+		B3F78E95205A518E009198E9 /* RDCPreferencesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3F78E94205A518E009198E9 /* RDCPreferencesView.xib */; };
+		B3F78EA8205A636D009198E9 /* RDCMessageQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F78EA0205A636C009198E9 /* RDCMessageQueue.m */; };
+		B3F78EA9205A636D009198E9 /* RDCMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F78EA3205A636C009198E9 /* RDCMessage.m */; };
+		B3F78EAA205A636D009198E9 /* RDCTcpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F78EA6205A636C009198E9 /* RDCTcpSocket.m */; };
+		B3F78EAE205A63CA009198E9 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F78EAC205A63CA009198E9 /* MBProgressHUD.m */; };
+		B3F78EBC205A6519009198E9 /* RDCConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F78EB9205A6519009198E9 /* RDCConfiguration.m */; };
+		B3F78EBD205A6519009198E9 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3F78EBA205A6519009198E9 /* config.plist */; };
+		B3F78EC1205A6555009198E9 /* RDCHostInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F78EC0205A6555009198E9 /* RDCHostInfo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B304EFC5205F63970035EE26 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		B304EFC6205F63970035EE26 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		B304EFC7205F63970035EE26 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		B304EFC8205F63970035EE26 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		B304EFC9205F63970035EE26 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		B304EFCA205F63970035EE26 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		B304EFCB205F63970035EE26 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		B304EFCC205F63970035EE26 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		B304EFCD205F63970035EE26 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		B304EFCE205F63970035EE26 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		B304EFCF205F63970035EE26 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		B304EFD0205F63970035EE26 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		B304EFD1205F63970035EE26 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		B304EFD2205F63970035EE26 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		B304EFD3205F63970035EE26 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		B304EFD4205F63970035EE26 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		B304EFD5205F63970035EE26 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		B304EFD6205F63970035EE26 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		B304EFD7205F63970035EE26 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		B304EFD8205F63970035EE26 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		B304EFD9205F63970035EE26 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		B304EFDA205F63970035EE26 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		B304EFDB205F63970035EE26 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		B304EFDC205F63970035EE26 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		B304EFDD205F63970035EE26 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		B304EFDE205F63970035EE26 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B33516C32060ECC700ABE0A9 /* RDCScreenMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDCScreenMenuView.h; sourceTree = "<group>"; };
+		B33516C42060ECC700ABE0A9 /* RDCScreenMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDCScreenMenuView.m; sourceTree = "<group>"; };
+		B33516C62060ECCE00ABE0A9 /* RDCScreenMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RDCScreenMenuView.xib; sourceTree = "<group>"; };
+		B33516C82060F28700ABE0A9 /* RDCMultilineButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDCMultilineButton.h; sourceTree = "<group>"; };
+		B33516C92060F28700ABE0A9 /* RDCMultilineButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDCMultilineButton.m; sourceTree = "<group>"; };
+		B33516CB2060FD4300ABE0A9 /* RDCScreenTopMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDCScreenTopMenuView.h; sourceTree = "<group>"; };
+		B33516CC2060FD4300ABE0A9 /* RDCScreenTopMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDCScreenTopMenuView.m; sourceTree = "<group>"; };
+		B33516CE2060FD4F00ABE0A9 /* RDCScreenTopMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RDCScreenTopMenuView.xib; sourceTree = "<group>"; };
+		B3A99CF320625B2A00E8A568 /* RDCScreenCustomKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDCScreenCustomKeyboard.h; sourceTree = "<group>"; };
+		B3A99CF420625B2A00E8A568 /* RDCScreenCustomKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDCScreenCustomKeyboard.m; sourceTree = "<group>"; };
+		B3A99CF820625DAA00E8A568 /* RDCCustomKeyboardItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDCCustomKeyboardItem.h; sourceTree = "<group>"; };
+		B3A99CF920625DAA00E8A568 /* RDCCustomKeyboardItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDCCustomKeyboardItem.m; sourceTree = "<group>"; };
+		B3ACD124205B6A1F002E2045 /* RDCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDCUtils.h; sourceTree = "<group>"; };
+		B3ACD125205B6A1F002E2045 /* RDCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDCUtils.m; sourceTree = "<group>"; };
+		B3ACD127205B6A7E002E2045 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B3ACD12A205BA153002E2045 /* RDCScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDCScreenViewController.h; sourceTree = "<group>"; };
+		B3ACD12B205BA153002E2045 /* RDCScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDCScreenViewController.m; sourceTree = "<group>"; };
+		B3ACD12F205BA9E5002E2045 /* RDCDrawingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDCDrawingView.h; sourceTree = "<group>"; };
+		B3ACD130205BA9E5002E2045 /* RDCDrawingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDCDrawingView.m; sourceTree = "<group>"; };
+		B3ACD135205BE106002E2045 /* libz.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.tbd; path = usr/lib/libz.1.tbd; sourceTree = SDKROOT; };
+		B3ACD139205BE246002E2045 /* libz.1.2.8.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.8.tbd; path = usr/lib/libz.1.2.8.tbd; sourceTree = SDKROOT; };
+		B3C5FACD20400533001572B3 /* RDCClient-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RDCClient-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3C5FAD020400533001572B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B3C5FAD120400533001572B3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B3C5FAD920400533001572B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3C5FADC20400533001572B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B3C5FADE20400533001572B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3C5FADF20400533001572B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B3E629F82061F9BC00D2D637 /* RDCCocoaKeycodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDCCocoaKeycodes.h; sourceTree = "<group>"; };
+		B3F78E76205A436F009198E9 /* RDCMainWindowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDCMainWindowViewController.h; sourceTree = "<group>"; };
+		B3F78E77205A436F009198E9 /* RDCMainWindowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RDCMainWindowViewController.xib; sourceTree = "<group>"; };
+		B3F78E78205A436F009198E9 /* RDCMainWindowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDCMainWindowViewController.m; sourceTree = "<group>"; };
+		B3F78E7B205A43AD009198E9 /* RDCClient-iOS.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RDCClient-iOS.pch"; sourceTree = "<group>"; };
+		B3F78E7D205A448D009198E9 /* RDCBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDCBaseViewController.h; sourceTree = "<group>"; };
+		B3F78E7E205A448D009198E9 /* RDCBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDCBaseViewController.m; sourceTree = "<group>"; };
+		B3F78E84205A4590009198E9 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		B3F78E85205A4590009198E9 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		B3F78E8E205A47F6009198E9 /* RDCBaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDCBaseNavigationController.h; sourceTree = "<group>"; };
+		B3F78E8F205A47F6009198E9 /* RDCBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDCBaseNavigationController.m; sourceTree = "<group>"; };
+		B3F78E91205A5185009198E9 /* RDCPreferencesView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDCPreferencesView.h; sourceTree = "<group>"; };
+		B3F78E92205A5185009198E9 /* RDCPreferencesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDCPreferencesView.m; sourceTree = "<group>"; };
+		B3F78E94205A518E009198E9 /* RDCPreferencesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RDCPreferencesView.xib; sourceTree = "<group>"; };
+		B3F78E9D205A636C009198E9 /* RDCServiceCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDCServiceCommand.h; sourceTree = "<group>"; };
+		B3F78E9F205A636C009198E9 /* RDCMessageQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDCMessageQueue.h; sourceTree = "<group>"; };
+		B3F78EA0205A636C009198E9 /* RDCMessageQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDCMessageQueue.m; sourceTree = "<group>"; };
+		B3F78EA2205A636C009198E9 /* RDCMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDCMessage.h; sourceTree = "<group>"; };
+		B3F78EA3205A636C009198E9 /* RDCMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDCMessage.m; sourceTree = "<group>"; };
+		B3F78EA5205A636C009198E9 /* RDCTcpSocketInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDCTcpSocketInterface.h; sourceTree = "<group>"; };
+		B3F78EA6205A636C009198E9 /* RDCTcpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDCTcpSocket.m; sourceTree = "<group>"; };
+		B3F78EA7205A636C009198E9 /* RDCTcpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDCTcpSocket.h; sourceTree = "<group>"; };
+		B3F78EAC205A63CA009198E9 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		B3F78EAD205A63CA009198E9 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		B3F78EB0205A64DF009198E9 /* libevent_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent_core.a; path = ../../../../../usr/local/lib/libevent_core.a; sourceTree = "<group>"; };
+		B3F78EB1205A64DF009198E9 /* libevent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent.a; path = ../../../../../usr/local/lib/libevent.a; sourceTree = "<group>"; };
+		B3F78EB2205A64DF009198E9 /* libevent_extra.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent_extra.a; path = ../../../../../usr/local/lib/libevent_extra.a; sourceTree = "<group>"; };
+		B3F78EB3205A64DF009198E9 /* libevent_pthreads.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent_pthreads.a; path = ../../../../../usr/local/lib/libevent_pthreads.a; sourceTree = "<group>"; };
+		B3F78EB9205A6519009198E9 /* RDCConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDCConfiguration.m; sourceTree = "<group>"; };
+		B3F78EBA205A6519009198E9 /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
+		B3F78EBB205A6519009198E9 /* RDCConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDCConfiguration.h; sourceTree = "<group>"; };
+		B3F78EBF205A6555009198E9 /* RDCHostInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDCHostInfo.h; sourceTree = "<group>"; };
+		B3F78EC0205A6555009198E9 /* RDCHostInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDCHostInfo.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3C5FACA20400533001572B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3ACD13A205BE246002E2045 /* libz.1.2.8.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B304EFC4205F63970035EE26 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				B304EFC5205F63970035EE26 /* MASCompositeConstraint.h */,
+				B304EFC6205F63970035EE26 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				B304EFC7205F63970035EE26 /* MASConstraint+Private.h */,
+				B304EFC8205F63970035EE26 /* MASLayoutConstraint.h */,
+				B304EFC9205F63970035EE26 /* NSArray+MASShorthandAdditions.h */,
+				B304EFCA205F63970035EE26 /* MASConstraintMaker.h */,
+				B304EFCB205F63970035EE26 /* View+MASAdditions.h */,
+				B304EFCC205F63970035EE26 /* NSArray+MASAdditions.h */,
+				B304EFCD205F63970035EE26 /* MASUtilities.h */,
+				B304EFCE205F63970035EE26 /* MASViewAttribute.h */,
+				B304EFCF205F63970035EE26 /* ViewController+MASAdditions.m */,
+				B304EFD0205F63970035EE26 /* MASViewConstraint.h */,
+				B304EFD1205F63970035EE26 /* MASConstraint.h */,
+				B304EFD2205F63970035EE26 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				B304EFD3205F63970035EE26 /* MASCompositeConstraint.m */,
+				B304EFD4205F63970035EE26 /* MASConstraintMaker.m */,
+				B304EFD5205F63970035EE26 /* MASLayoutConstraint.m */,
+				B304EFD6205F63970035EE26 /* NSArray+MASAdditions.m */,
+				B304EFD7205F63970035EE26 /* View+MASAdditions.m */,
+				B304EFD8205F63970035EE26 /* View+MASShorthandAdditions.h */,
+				B304EFD9205F63970035EE26 /* Masonry.h */,
+				B304EFDA205F63970035EE26 /* MASConstraint.m */,
+				B304EFDB205F63970035EE26 /* ViewController+MASAdditions.h */,
+				B304EFDC205F63970035EE26 /* MASViewConstraint.m */,
+				B304EFDD205F63970035EE26 /* MASViewAttribute.m */,
+				B304EFDE205F63970035EE26 /* Info.plist */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		B33516C22060EC9300ABE0A9 /* MenuView */ = {
+			isa = PBXGroup;
+			children = (
+				B33516C32060ECC700ABE0A9 /* RDCScreenMenuView.h */,
+				B33516C42060ECC700ABE0A9 /* RDCScreenMenuView.m */,
+				B33516C62060ECCE00ABE0A9 /* RDCScreenMenuView.xib */,
+				B33516C82060F28700ABE0A9 /* RDCMultilineButton.h */,
+				B33516C92060F28700ABE0A9 /* RDCMultilineButton.m */,
+				B33516CB2060FD4300ABE0A9 /* RDCScreenTopMenuView.h */,
+				B33516CC2060FD4300ABE0A9 /* RDCScreenTopMenuView.m */,
+				B33516CE2060FD4F00ABE0A9 /* RDCScreenTopMenuView.xib */,
+				B3A99CF320625B2A00E8A568 /* RDCScreenCustomKeyboard.h */,
+				B3A99CF420625B2A00E8A568 /* RDCScreenCustomKeyboard.m */,
+				B3A99CF820625DAA00E8A568 /* RDCCustomKeyboardItem.h */,
+				B3A99CF920625DAA00E8A568 /* RDCCustomKeyboardItem.m */,
+			);
+			path = MenuView;
+			sourceTree = "<group>";
+		};
+		B3ACD123205B6A1F002E2045 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B3E629F82061F9BC00D2D637 /* RDCCocoaKeycodes.h */,
+				B3ACD124205B6A1F002E2045 /* RDCUtils.h */,
+				B3ACD125205B6A1F002E2045 /* RDCUtils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B3ACD129205BA12C002E2045 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				B3ACD12A205BA153002E2045 /* RDCScreenViewController.h */,
+				B3ACD12B205BA153002E2045 /* RDCScreenViewController.m */,
+				B3ACD12F205BA9E5002E2045 /* RDCDrawingView.h */,
+				B3ACD130205BA9E5002E2045 /* RDCDrawingView.m */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		B3C5FAC420400533001572B3 = {
+			isa = PBXGroup;
+			children = (
+				B3C5FACF20400533001572B3 /* RDCClient-iOS */,
+				B3C5FACE20400533001572B3 /* Products */,
+				B3F78EAF205A64DF009198E9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B3C5FACE20400533001572B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3C5FACD20400533001572B3 /* RDCClient-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3C5FACF20400533001572B3 /* RDCClient-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B3F78E82205A4575009198E9 /* ThirdParty */,
+				B3F78E6E205A4302009198E9 /* Classes */,
+				B3F78E6B205A42D6009198E9 /* AppDelegate */,
+				B3F78E6C205A42E5009198E9 /* Resources */,
+				B3F78E6D205A42F4009198E9 /* Supporting Files */,
+			);
+			path = "RDCClient-iOS";
+			sourceTree = "<group>";
+		};
+		B3F78E6B205A42D6009198E9 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B3C5FAD020400533001572B3 /* AppDelegate.h */,
+				B3C5FAD120400533001572B3 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		B3F78E6C205A42E5009198E9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B3C5FAD920400533001572B3 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B3F78E6D205A42F4009198E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3C5FADB20400533001572B3 /* LaunchScreen.storyboard */,
+				B3C5FADE20400533001572B3 /* Info.plist */,
+				B3C5FADF20400533001572B3 /* main.m */,
+				B3F78E7B205A43AD009198E9 /* RDCClient-iOS.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3F78E6E205A4302009198E9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B33516C22060EC9300ABE0A9 /* MenuView */,
+				B3ACD129205BA12C002E2045 /* Screen */,
+				B3ACD123205B6A1F002E2045 /* Utils */,
+				B3F78EBE205A6555009198E9 /* HostInfo */,
+				B3F78EB8205A6519009198E9 /* Configuration */,
+				B3F78EA1205A636C009198E9 /* Message */,
+				B3F78E9E205A636C009198E9 /* MessageQueue */,
+				B3F78E9C205A636C009198E9 /* ServicesCommand */,
+				B3F78EA4205A636C009198E9 /* Socket */,
+				B3F78E7C205A447C009198E9 /* Base */,
+				B3F78E75205A436F009198E9 /* MainWindow */,
+				B3F78E88205A4625009198E9 /* Preferences */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B3F78E75205A436F009198E9 /* MainWindow */ = {
+			isa = PBXGroup;
+			children = (
+				B3F78E76205A436F009198E9 /* RDCMainWindowViewController.h */,
+				B3F78E78205A436F009198E9 /* RDCMainWindowViewController.m */,
+				B3F78E77205A436F009198E9 /* RDCMainWindowViewController.xib */,
+			);
+			path = MainWindow;
+			sourceTree = "<group>";
+		};
+		B3F78E7C205A447C009198E9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B3F78E7D205A448D009198E9 /* RDCBaseViewController.h */,
+				B3F78E7E205A448D009198E9 /* RDCBaseViewController.m */,
+				B3F78E8E205A47F6009198E9 /* RDCBaseNavigationController.h */,
+				B3F78E8F205A47F6009198E9 /* RDCBaseNavigationController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B3F78E82205A4575009198E9 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				B304EFC4205F63970035EE26 /* Masonry */,
+				B3F78EAB205A63CA009198E9 /* MBProgressHUD */,
+				B3F78E83205A4590009198E9 /* Reachability */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		B3F78E83205A4590009198E9 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				B3F78E84205A4590009198E9 /* Reachability.m */,
+				B3F78E85205A4590009198E9 /* Reachability.h */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		B3F78E88205A4625009198E9 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				B3F78E91205A5185009198E9 /* RDCPreferencesView.h */,
+				B3F78E92205A5185009198E9 /* RDCPreferencesView.m */,
+				B3F78E94205A518E009198E9 /* RDCPreferencesView.xib */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		B3F78E9C205A636C009198E9 /* ServicesCommand */ = {
+			isa = PBXGroup;
+			children = (
+				B3F78E9D205A636C009198E9 /* RDCServiceCommand.h */,
+			);
+			path = ServicesCommand;
+			sourceTree = "<group>";
+		};
+		B3F78E9E205A636C009198E9 /* MessageQueue */ = {
+			isa = PBXGroup;
+			children = (
+				B3F78E9F205A636C009198E9 /* RDCMessageQueue.h */,
+				B3F78EA0205A636C009198E9 /* RDCMessageQueue.m */,
+			);
+			path = MessageQueue;
+			sourceTree = "<group>";
+		};
+		B3F78EA1205A636C009198E9 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				B3F78EA2205A636C009198E9 /* RDCMessage.h */,
+				B3F78EA3205A636C009198E9 /* RDCMessage.m */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		B3F78EA4205A636C009198E9 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				B3F78EA5205A636C009198E9 /* RDCTcpSocketInterface.h */,
+				B3F78EA7205A636C009198E9 /* RDCTcpSocket.h */,
+				B3F78EA6205A636C009198E9 /* RDCTcpSocket.m */,
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
+		B3F78EAB205A63CA009198E9 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				B3F78EAC205A63CA009198E9 /* MBProgressHUD.m */,
+				B3F78EAD205A63CA009198E9 /* MBProgressHUD.h */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		B3F78EAF205A64DF009198E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3ACD139205BE246002E2045 /* libz.1.2.8.tbd */,
+				B3ACD135205BE106002E2045 /* libz.1.tbd */,
+				B3ACD127205B6A7E002E2045 /* libz.tbd */,
+				B3F78EB0205A64DF009198E9 /* libevent_core.a */,
+				B3F78EB2205A64DF009198E9 /* libevent_extra.a */,
+				B3F78EB3205A64DF009198E9 /* libevent_pthreads.a */,
+				B3F78EB1205A64DF009198E9 /* libevent.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3F78EB8205A6519009198E9 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				B3F78EBB205A6519009198E9 /* RDCConfiguration.h */,
+				B3F78EB9205A6519009198E9 /* RDCConfiguration.m */,
+				B3F78EBA205A6519009198E9 /* config.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		B3F78EBE205A6555009198E9 /* HostInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B3F78EBF205A6555009198E9 /* RDCHostInfo.h */,
+				B3F78EC0205A6555009198E9 /* RDCHostInfo.m */,
+			);
+			path = HostInfo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3C5FACC20400533001572B3 /* RDCClient-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3C5FAE320400533001572B3 /* Build configuration list for PBXNativeTarget "RDCClient-iOS" */;
+			buildPhases = (
+				B3C5FAC920400533001572B3 /* Sources */,
+				B3C5FACA20400533001572B3 /* Frameworks */,
+				B3C5FACB20400533001572B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RDCClient-iOS";
+			productName = "RDCClient-iOS";
+			productReference = B3C5FACD20400533001572B3 /* RDCClient-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3C5FAC520400533001572B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RDC;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "王落凡";
+				TargetAttributes = {
+					B3C5FACC20400533001572B3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B3C5FAC820400533001572B3 /* Build configuration list for PBXProject "RDCClient-iOS" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3C5FAC420400533001572B3;
+			productRefGroup = B3C5FACE20400533001572B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3C5FACC20400533001572B3 /* RDCClient-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3C5FACB20400533001572B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3C5FADD20400533001572B3 /* LaunchScreen.storyboard in Resources */,
+				B3F78E95205A518E009198E9 /* RDCPreferencesView.xib in Resources */,
+				B3F78EBD205A6519009198E9 /* config.plist in Resources */,
+				B3F78E79205A436F009198E9 /* RDCMainWindowViewController.xib in Resources */,
+				B3C5FADA20400533001572B3 /* Assets.xcassets in Resources */,
+				B33516CF2060FD4F00ABE0A9 /* RDCScreenTopMenuView.xib in Resources */,
+				B304EFE9205F63970035EE26 /* Info.plist in Resources */,
+				B33516C72060ECCE00ABE0A9 /* RDCScreenMenuView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3C5FAC920400533001572B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3ACD12D205BA153002E2045 /* RDCScreenViewController.m in Sources */,
+				B3F78E7A205A436F009198E9 /* RDCMainWindowViewController.m in Sources */,
+				B3F78EC1205A6555009198E9 /* RDCHostInfo.m in Sources */,
+				B3F78EBC205A6519009198E9 /* RDCConfiguration.m in Sources */,
+				B304EFE1205F63970035EE26 /* MASCompositeConstraint.m in Sources */,
+				B3F78EA9205A636D009198E9 /* RDCMessage.m in Sources */,
+				B3F78E7F205A448D009198E9 /* RDCBaseViewController.m in Sources */,
+				B3A99CF520625B2A00E8A568 /* RDCScreenCustomKeyboard.m in Sources */,
+				B33516C52060ECC700ABE0A9 /* RDCScreenMenuView.m in Sources */,
+				B3C5FAE020400533001572B3 /* main.m in Sources */,
+				B304EFE6205F63970035EE26 /* MASConstraint.m in Sources */,
+				B3F78E90205A47F6009198E9 /* RDCBaseNavigationController.m in Sources */,
+				B33516CD2060FD4300ABE0A9 /* RDCScreenTopMenuView.m in Sources */,
+				B3C5FAD220400533001572B3 /* AppDelegate.m in Sources */,
+				B304EFE0205F63970035EE26 /* ViewController+MASAdditions.m in Sources */,
+				B33516CA2060F28700ABE0A9 /* RDCMultilineButton.m in Sources */,
+				B304EFE7205F63970035EE26 /* MASViewConstraint.m in Sources */,
+				B304EFE8205F63970035EE26 /* MASViewAttribute.m in Sources */,
+				B3F78EAA205A636D009198E9 /* RDCTcpSocket.m in Sources */,
+				B304EFDF205F63970035EE26 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				B3A99CFA20625DAA00E8A568 /* RDCCustomKeyboardItem.m in Sources */,
+				B304EFE2205F63970035EE26 /* MASConstraintMaker.m in Sources */,
+				B3F78EAE205A63CA009198E9 /* MBProgressHUD.m in Sources */,
+				B3ACD131205BA9E5002E2045 /* RDCDrawingView.m in Sources */,
+				B3F78E86205A4590009198E9 /* Reachability.m in Sources */,
+				B304EFE4205F63970035EE26 /* NSArray+MASAdditions.m in Sources */,
+				B304EFE3205F63970035EE26 /* MASLayoutConstraint.m in Sources */,
+				B304EFE5205F63970035EE26 /* View+MASAdditions.m in Sources */,
+				B3ACD126205B6A1F002E2045 /* RDCUtils.m in Sources */,
+				B3F78EA8205A636D009198E9 /* RDCMessageQueue.m in Sources */,
+				B3F78E93205A5185009198E9 /* RDCPreferencesView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B3C5FADB20400533001572B3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3C5FADC20400533001572B3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3C5FAE120400533001572B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B3C5FAE220400533001572B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3C5FAE420400533001572B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29D7F8VWD7;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/$(PROJECT_NAME).pch";
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				INFOPLIST_FILE = "RDCClient-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wangluofan.RDC.RDCClient-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B3C5FAE520400533001572B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29D7F8VWD7;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/$(PROJECT_NAME).pch";
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				INFOPLIST_FILE = "RDCClient-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wangluofan.RDC.RDCClient-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3C5FAC820400533001572B3 /* Build configuration list for PBXProject "RDCClient-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3C5FAE120400533001572B3 /* Debug */,
+				B3C5FAE220400533001572B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3C5FAE320400533001572B3 /* Build configuration list for PBXNativeTarget "RDCClient-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3C5FAE420400533001572B3 /* Debug */,
+				B3C5FAE520400533001572B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3C5FAC520400533001572B3 /* Project object */;
+}

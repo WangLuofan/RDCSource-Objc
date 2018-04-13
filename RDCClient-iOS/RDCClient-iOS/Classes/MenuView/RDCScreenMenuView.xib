@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RDCScreenMenuView">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4d0-Ts-F03" customClass="RDCMultilineButton">
+                    <rect key="frame" x="100" y="0.0" width="50" height="50"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="4d0-Ts-F03" secondAttribute="height" multiplier="1:1" id="e1s-e7-DWa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="收起 菜单"/>
+                    <connections>
+                        <action selector="hideMenu" destination="iN0-l3-epB" eventType="touchUpInside" id="yEJ-5i-LUZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9G8-d2-hNb" customClass="RDCMultilineButton">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    <color key="backgroundColor" red="0.95686274510000002" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="9G8-d2-hNb" secondAttribute="height" multiplier="1:1" id="egr-iH-EVT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="弹出 键盘"/>
+                    <connections>
+                        <action selector="menuItemSelected:" destination="iN0-l3-epB" eventType="touchUpInside" id="bih-s5-QN6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ez-wl-aP8" customClass="RDCMultilineButton">
+                    <rect key="frame" x="50" y="0.0" width="50" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="0.65098039220000004" blue="0.94509803920000002" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="2ez-wl-aP8" secondAttribute="height" multiplier="1:1" id="LBi-hT-gDu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="关闭 连接"/>
+                    <connections>
+                        <action selector="menuItemSelected:" destination="iN0-l3-epB" eventType="touchUpInside" id="Q4V-8f-7ZT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4d0-Ts-F03" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="7Dg-e9-Mp9"/>
+                <constraint firstItem="9G8-d2-hNb" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="Bvp-g8-pmQ"/>
+                <constraint firstItem="4d0-Ts-F03" firstAttribute="leading" secondItem="2ez-wl-aP8" secondAttribute="trailing" id="NaO-1d-G5e"/>
+                <constraint firstItem="2ez-wl-aP8" firstAttribute="leading" secondItem="9G8-d2-hNb" secondAttribute="trailing" id="Psc-Pp-Q53"/>
+                <constraint firstItem="9G8-d2-hNb" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="TsD-Pn-GBD"/>
+                <constraint firstItem="4d0-Ts-F03" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="b1Z-qd-OkL"/>
+                <constraint firstItem="2ez-wl-aP8" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="c3J-s2-8iX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4d0-Ts-F03" secondAttribute="trailing" id="kLK-lw-TWa"/>
+                <constraint firstItem="2ez-wl-aP8" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="lZW-rB-8fo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-23" y="75"/>
+        </view>
+    </objects>
+</document>

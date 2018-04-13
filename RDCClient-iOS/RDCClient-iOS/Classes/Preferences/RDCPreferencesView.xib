@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RDCPreferencesView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="服务器信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVH-xI-UEE">
+                    <rect key="frame" x="152" y="0.0" width="71.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sge-HV-Ybj">
+                    <rect key="frame" x="0.0" y="17" width="375" height="101"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="远程地址:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5C-Ws-5os">
+                            <rect key="frame" x="15" y="15" width="74" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入服务器地址" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fJr-t7-t7t">
+                            <rect key="frame" x="104" y="10.5" width="256" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="远程端口:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BCd-ki-2GZ">
+                            <rect key="frame" x="15" y="60" width="74" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入服务器端口" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RJg-GR-4mt">
+                            <rect key="frame" x="104" y="55.5" width="256" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.7843137255" green="0.78823529410000004" blue="0.80000000000000004" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstItem="Z5C-Ws-5os" firstAttribute="top" secondItem="sge-HV-Ybj" secondAttribute="top" constant="15" id="ANS-bW-MA7"/>
+                        <constraint firstItem="fJr-t7-t7t" firstAttribute="leading" secondItem="Z5C-Ws-5os" secondAttribute="trailing" constant="15" id="Ffw-XC-GHm"/>
+                        <constraint firstAttribute="height" constant="101" id="NJz-ZO-A1w"/>
+                        <constraint firstItem="Z5C-Ws-5os" firstAttribute="leading" secondItem="sge-HV-Ybj" secondAttribute="leading" constant="15" id="Rkp-v3-9dm"/>
+                        <constraint firstItem="RJg-GR-4mt" firstAttribute="top" secondItem="fJr-t7-t7t" secondAttribute="bottom" constant="15" id="UhR-we-yNe"/>
+                        <constraint firstAttribute="trailing" secondItem="RJg-GR-4mt" secondAttribute="trailing" constant="15" id="Yp5-uA-o3v"/>
+                        <constraint firstAttribute="trailing" secondItem="fJr-t7-t7t" secondAttribute="trailing" constant="15" id="a6Z-gm-9Om"/>
+                        <constraint firstItem="fJr-t7-t7t" firstAttribute="centerY" secondItem="Z5C-Ws-5os" secondAttribute="centerY" id="adr-FY-2kg"/>
+                        <constraint firstItem="RJg-GR-4mt" firstAttribute="centerY" secondItem="BCd-ki-2GZ" secondAttribute="centerY" id="jHJ-TI-ypI"/>
+                        <constraint firstItem="RJg-GR-4mt" firstAttribute="leading" secondItem="BCd-ki-2GZ" secondAttribute="trailing" constant="15" id="mFx-dV-7SH"/>
+                        <constraint firstItem="BCd-ki-2GZ" firstAttribute="leading" secondItem="Z5C-Ws-5os" secondAttribute="leading" id="pZ6-x0-MBY"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghc-IA-zfz">
+                    <rect key="frame" x="0.0" y="128" width="375" height="34"/>
+                    <color key="backgroundColor" red="0.73725490199999999" green="0.74117647060000003" blue="0.75686274509999996" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal" title="保存">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="saveConfiguration:" destination="iN0-l3-epB" eventType="touchUpInside" id="iNb-Rx-c6y"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2q-WL-SQk">
+                    <rect key="frame" x="0.0" y="166" width="375" height="34"/>
+                    <color key="backgroundColor" red="0.73725490199999999" green="0.74117647060000003" blue="0.75686274509999996" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.1019607843" alpha="1" colorSpace="deviceRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="hide" destination="iN0-l3-epB" eventType="touchUpInside" id="HJx-hn-rmS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="y2q-WL-SQk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Cfw-Gm-p8y"/>
+                <constraint firstItem="cVH-xI-UEE" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="IZQ-Ks-0Pb"/>
+                <constraint firstItem="y2q-WL-SQk" firstAttribute="top" secondItem="ghc-IA-zfz" secondAttribute="bottom" constant="4" id="Lg1-vA-z2Z"/>
+                <constraint firstItem="ghc-IA-zfz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Op2-t5-nu4"/>
+                <constraint firstItem="sge-HV-Ybj" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="SkD-0m-Oj1"/>
+                <constraint firstItem="sge-HV-Ybj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="VVi-f2-lAR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ghc-IA-zfz" secondAttribute="trailing" id="efe-lh-LUH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="y2q-WL-SQk" secondAttribute="trailing" id="hPR-Bz-kGR"/>
+                <constraint firstItem="cVH-xI-UEE" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="jfB-6Z-XTh"/>
+                <constraint firstItem="sge-HV-Ybj" firstAttribute="top" secondItem="cVH-xI-UEE" secondAttribute="bottom" id="yJY-0Y-kcR"/>
+                <constraint firstItem="ghc-IA-zfz" firstAttribute="top" secondItem="sge-HV-Ybj" secondAttribute="bottom" constant="10" id="yVL-cq-CSS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="serverAddrTextField" destination="fJr-t7-t7t" id="7rV-gk-wEz"/>
+                <outlet property="serverPortTextField" destination="RJg-GR-4mt" id="SgX-TZ-kHZ"/>
+            </connections>
+            <point key="canvasLocation" x="68.5" y="-126"/>
+        </view>
+    </objects>
+</document>

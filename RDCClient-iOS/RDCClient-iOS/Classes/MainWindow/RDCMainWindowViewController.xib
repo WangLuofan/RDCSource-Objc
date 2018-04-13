@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RDCMainWindowViewController">
+            <connections>
+                <outlet property="tokenTextField" destination="PWK-RE-EBc" id="m1a-1o-tu9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="控制远程设备" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQF-gd-Hjs">
+                    <rect key="frame" x="15" y="50" width="128.5" height="25.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请输入您合作伙伴的Token, 以便控制远程设备" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AbK-KI-KBm">
+                    <rect key="frame" x="15" y="85.5" width="249" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="伙伴Token" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PWK-RE-EBc">
+                    <rect key="frame" x="15" y="120" width="345" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="3sj-D3-XfU"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="65S-RF-I1q">
+                    <rect key="frame" x="15" y="160" width="345" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="T4c-Ua-hwD"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rW3-Jr-opZ">
+                    <rect key="frame" x="15" y="191" width="100" height="34"/>
+                    <color key="backgroundColor" red="0.0" green="0.5" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Lpp-oC-Pv6"/>
+                    </constraints>
+                    <state key="normal" title="远程控制"/>
+                    <connections>
+                        <action selector="doConnection:" destination="-1" eventType="touchUpInside" id="1lg-4r-5zC"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="AbK-KI-KBm" firstAttribute="top" secondItem="PQF-gd-Hjs" secondAttribute="bottom" constant="10" id="4zL-Ph-8hc"/>
+                <constraint firstItem="65S-RF-I1q" firstAttribute="top" secondItem="PWK-RE-EBc" secondAttribute="bottom" id="FJI-7s-yFn"/>
+                <constraint firstItem="rW3-Jr-opZ" firstAttribute="leading" secondItem="PQF-gd-Hjs" secondAttribute="leading" id="G03-uJ-o2Z"/>
+                <constraint firstItem="PQF-gd-Hjs" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="M6H-Uy-SQg"/>
+                <constraint firstItem="PWK-RE-EBc" firstAttribute="top" secondItem="AbK-KI-KBm" secondAttribute="bottom" constant="20" id="OD1-B0-DM2"/>
+                <constraint firstItem="PQF-gd-Hjs" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="30" id="WVp-iu-C1N"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="PWK-RE-EBc" secondAttribute="trailing" constant="15" id="YFk-SZ-YuG"/>
+                <constraint firstItem="65S-RF-I1q" firstAttribute="trailing" secondItem="PWK-RE-EBc" secondAttribute="trailing" id="dJT-3e-0K1"/>
+                <constraint firstItem="AbK-KI-KBm" firstAttribute="leading" secondItem="PQF-gd-Hjs" secondAttribute="leading" id="dNM-f5-mhD"/>
+                <constraint firstItem="rW3-Jr-opZ" firstAttribute="top" secondItem="65S-RF-I1q" secondAttribute="bottom" constant="30" id="lgg-1h-egF"/>
+                <constraint firstItem="65S-RF-I1q" firstAttribute="leading" secondItem="PWK-RE-EBc" secondAttribute="leading" id="mi6-4d-lgS"/>
+                <constraint firstItem="PWK-RE-EBc" firstAttribute="leading" secondItem="AbK-KI-KBm" secondAttribute="leading" id="oaf-qj-jJt"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="33.5" y="74.5"/>
+        </view>
+    </objects>
+</document>

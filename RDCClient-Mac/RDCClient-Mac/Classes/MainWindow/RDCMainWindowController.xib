@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="RDCMainWindowController">
+            <connections>
+                <outlet property="otherTokenTextField" destination="78Z-46-SNj" id="UpZ-z4-P7v"/>
+                <outlet property="userPassTextField" destination="Xzf-pB-AQF" id="V3w-gM-Y1O"/>
+                <outlet property="userTokenTextField" destination="OE9-sE-TvJ" id="Mia-en-Iff"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="远程控制客户端" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5" customClass="RDCMainWindow">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="534" height="276"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <view key="contentView" wantsLayer="YES" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="534" height="276"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0Ep-f4-j7T">
+                        <rect key="frame" x="413" y="32" width="112" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="4FP-Y5-jBf"/>
+                        </constraints>
+                        <buttonCell key="cell" type="push" title="连接" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="bwg-ac-8O0">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="doConnection:" target="-2" id="ODl-VU-hMy"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FPd-HG-ssc">
+                        <rect key="frame" x="298" y="32" width="112" height="32"/>
+                        <buttonCell key="cell" type="push" title="断开" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2X0-yv-LcT">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="doDisconnection:" target="-2" id="JRy-SJ-ZNU"/>
+                        </connections>
+                    </button>
+                    <box autoresizesSubviews="NO" borderType="line" title="允许远程控制" translatesAutoresizingMaskIntoConstraints="NO" id="sZt-zP-KnI">
+                        <rect key="frame" x="12" y="157" width="510" height="104"/>
+                        <view key="contentView" id="kZq-Rg-GwO">
+                            <rect key="frame" x="1" y="1" width="508" height="88"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XFe-8T-rfR">
+                                    <rect key="frame" x="13" y="52" width="154" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="150" id="7BP-gx-KlY"/>
+                                    </constraints>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="您的Token:" id="nsh-pf-hQf">
+                                        <font key="font" size="20" name=".PingFangSC-Regular"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OE9-sE-TvJ">
+                                    <rect key="frame" x="180" y="51" width="313" height="22"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Your Token" drawsBackground="YES" id="uX3-18-yB5">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1Ls-GP-MZB">
+                                    <rect key="frame" x="13" y="16" width="154" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="150" id="SAQ-65-F9x"/>
+                                    </constraints>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="您的Password:" id="Snc-bD-bUn">
+                                        <font key="font" size="20" name=".PingFangSC-Regular"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Xzf-pB-AQF">
+                                    <rect key="frame" x="180" y="16" width="313" height="22"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Your Password" drawsBackground="YES" id="e2Y-J2-1j8">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="OE9-sE-TvJ" firstAttribute="leading" secondItem="XFe-8T-rfR" secondAttribute="trailing" constant="15" id="4Ft-It-8My"/>
+                                <constraint firstItem="Xzf-pB-AQF" firstAttribute="centerY" secondItem="1Ls-GP-MZB" secondAttribute="centerY" id="Bsv-d3-Ngh"/>
+                                <constraint firstItem="OE9-sE-TvJ" firstAttribute="centerY" secondItem="XFe-8T-rfR" secondAttribute="centerY" id="Fay-7j-etf"/>
+                                <constraint firstItem="1Ls-GP-MZB" firstAttribute="top" secondItem="XFe-8T-rfR" secondAttribute="bottom" constant="15" id="OLJ-Zu-jFn"/>
+                                <constraint firstAttribute="trailing" secondItem="Xzf-pB-AQF" secondAttribute="trailing" constant="15" id="ZYM-Yb-AsF"/>
+                                <constraint firstItem="XFe-8T-rfR" firstAttribute="top" secondItem="kZq-Rg-GwO" secondAttribute="top" constant="15" id="ar1-Wv-chX"/>
+                                <constraint firstItem="XFe-8T-rfR" firstAttribute="leading" secondItem="kZq-Rg-GwO" secondAttribute="leading" constant="15" id="dBt-tJ-96r"/>
+                                <constraint firstAttribute="trailing" secondItem="OE9-sE-TvJ" secondAttribute="trailing" constant="15" id="i0X-yf-XQB"/>
+                                <constraint firstItem="1Ls-GP-MZB" firstAttribute="leading" secondItem="kZq-Rg-GwO" secondAttribute="leading" constant="15" id="nXQ-2a-d0d"/>
+                                <constraint firstItem="Xzf-pB-AQF" firstAttribute="leading" secondItem="1Ls-GP-MZB" secondAttribute="trailing" constant="15" id="teh-Hw-8r5"/>
+                            </constraints>
+                        </view>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="VR8-zy-vlW"/>
+                        </constraints>
+                        <font key="titleFont" size="11" name=".PingFangSC-Regular"/>
+                    </box>
+                    <box autoresizesSubviews="NO" borderType="line" title="控制远程计算机" translatesAutoresizingMaskIntoConstraints="NO" id="eWa-pi-6sp">
+                        <rect key="frame" x="10" y="74" width="514" height="69"/>
+                        <view key="contentView" id="5H8-bJ-Hbm">
+                            <rect key="frame" x="1" y="1" width="512" height="53"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="78Z-46-SNj">
+                                    <rect key="frame" x="180" y="17" width="317" height="22"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="S92-xh-FH6">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fpE-0b-DY5">
+                                    <rect key="frame" x="13" y="17" width="154" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="150" id="YvH-64-wwt"/>
+                                    </constraints>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="伙伴Token:" id="4ko-QP-qui">
+                                        <font key="font" size="20" name=".PingFangSC-Regular"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="fpE-0b-DY5" firstAttribute="top" secondItem="5H8-bJ-Hbm" secondAttribute="top" constant="15" id="D6b-CY-3Hc"/>
+                                <constraint firstAttribute="trailing" secondItem="78Z-46-SNj" secondAttribute="trailing" constant="15" id="G8z-dR-6IR"/>
+                                <constraint firstItem="78Z-46-SNj" firstAttribute="centerY" secondItem="fpE-0b-DY5" secondAttribute="centerY" id="KYF-lP-0zq"/>
+                                <constraint firstItem="78Z-46-SNj" firstAttribute="leading" secondItem="fpE-0b-DY5" secondAttribute="trailing" constant="15" id="kPa-8q-hpf"/>
+                                <constraint firstItem="fpE-0b-DY5" firstAttribute="leading" secondItem="5H8-bJ-Hbm" secondAttribute="leading" constant="15" id="syX-rV-emH"/>
+                            </constraints>
+                        </view>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="65" id="A7h-GM-BOJ"/>
+                        </constraints>
+                        <font key="titleFont" size="11" name=".PingFangSC-Regular"/>
+                    </box>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5OP-i4-Xch">
+                        <rect key="frame" x="-2" y="0.0" width="538" height="19"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="iKQ-S5-mFc">
+                            <font key="font" metaFont="system" size="15"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="oiu-bH-meh">
+                        <rect key="frame" x="0.0" y="17" width="534" height="5"/>
+                    </box>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5OP-i4-Xch" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="0Cc-5y-1ep"/>
+                    <constraint firstItem="5OP-i4-Xch" firstAttribute="top" secondItem="oiu-bH-meh" secondAttribute="bottom" id="2Jl-oi-BEx"/>
+                    <constraint firstAttribute="bottom" secondItem="5OP-i4-Xch" secondAttribute="bottom" id="3al-9d-7L4"/>
+                    <constraint firstItem="sZt-zP-KnI" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="15" id="5tD-RL-D0j"/>
+                    <constraint firstItem="0Ep-f4-j7T" firstAttribute="leading" secondItem="FPd-HG-ssc" secondAttribute="trailing" constant="15" id="ETO-mp-VIf"/>
+                    <constraint firstAttribute="trailing" secondItem="5OP-i4-Xch" secondAttribute="trailing" id="LcV-xj-5IJ"/>
+                    <constraint firstItem="eWa-pi-6sp" firstAttribute="trailing" secondItem="kZq-Rg-GwO" secondAttribute="trailing" id="MwI-Og-MPr"/>
+                    <constraint firstAttribute="trailing" secondItem="oiu-bH-meh" secondAttribute="trailing" id="Nid-DR-8zr"/>
+                    <constraint firstItem="eWa-pi-6sp" firstAttribute="leading" secondItem="kZq-Rg-GwO" secondAttribute="leading" id="TfR-R9-8Wv"/>
+                    <constraint firstItem="eWa-pi-6sp" firstAttribute="top" secondItem="kZq-Rg-GwO" secondAttribute="bottom" constant="15" id="cRV-Db-4ZU"/>
+                    <constraint firstItem="0Ep-f4-j7T" firstAttribute="top" secondItem="5H8-bJ-Hbm" secondAttribute="bottom" constant="15" id="csy-2n-m3Y"/>
+                    <constraint firstItem="FPd-HG-ssc" firstAttribute="top" secondItem="0Ep-f4-j7T" secondAttribute="top" id="eqs-0k-SbO"/>
+                    <constraint firstAttribute="trailing" secondItem="0Ep-f4-j7T" secondAttribute="trailing" constant="15" id="exK-he-hXR"/>
+                    <constraint firstItem="0Ep-f4-j7T" firstAttribute="width" secondItem="FPd-HG-ssc" secondAttribute="width" id="gXg-x9-2tq"/>
+                    <constraint firstItem="oiu-bH-meh" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="qW9-UZ-UOx"/>
+                    <constraint firstItem="sZt-zP-KnI" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="15" id="uXh-2y-icW"/>
+                    <constraint firstAttribute="trailing" secondItem="sZt-zP-KnI" secondAttribute="trailing" constant="15" id="xuw-Qj-jKW"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="243" y="128"/>
+        </window>
+    </objects>
+</document>
